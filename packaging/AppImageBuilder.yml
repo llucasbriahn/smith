@@ -1,0 +1,49 @@
+# Build on Ubuntu 22.04 x86_64 with appimage-builder. Not a published binary.
+version: 1
+script:
+  - python3 packaging/prepare_appdir.py
+AppDir:
+  path: ./build/SMITH.AppDir
+  app_info:
+    id: org.smith.Soundboard
+    name: SMITH Soundboard
+    icon: org.smith.Soundboard
+    version: 1.1.0
+    exec: usr/bin/python3
+    exec_args: '$APPDIR/usr/share/smith-soundboard/launch.py $@'
+  apt:
+    arch: amd64
+    sources:
+      - sourceline: 'deb [arch=amd64] https://archive.ubuntu.com/ubuntu/ jammy main universe'
+        key_url: 'https://archive.ubuntu.com/ubuntu/project/ubuntu-archive-keyring.gpg'
+      - sourceline: 'deb [arch=amd64] https://archive.ubuntu.com/ubuntu/ jammy-updates main universe'
+        key_url: 'https://archive.ubuntu.com/ubuntu/project/ubuntu-archive-keyring.gpg'
+      - sourceline: 'deb [arch=amd64] https://security.ubuntu.com/ubuntu/ jammy-security main universe'
+        key_url: 'https://archive.ubuntu.com/ubuntu/project/ubuntu-archive-keyring.gpg'
+    include:
+      - python3
+      - python3-gi
+      - python3-gi-cairo
+      - python3-cairo
+      - python3-gst-1.0
+      - gir1.2-gtk-3.0
+      - gir1.2-gstreamer-1.0
+      - gir1.2-gst-plugins-base-1.0
+      - gstreamer1.0-plugins-base
+      - gstreamer1.0-plugins-good
+      - gstreamer1.0-plugins-bad
+      - gstreamer1.0-plugins-ugly
+      - gstreamer1.0-libav
+      - pulseaudio-utils
+      - libx11-6
+      - adwaita-icon-theme
+  runtime:
+    env:
+      PYTHONHOME: '${APPDIR}/usr'
+      PYTHONPATH: '${APPDIR}/usr/lib/python3/dist-packages'
+      GI_TYPELIB_PATH: '${APPDIR}/usr/lib/x86_64-linux-gnu/girepository-1.0'
+      GST_PLUGIN_PATH: '${APPDIR}/usr/lib/x86_64-linux-gnu/gstreamer-1.0'
+      GST_PLUGIN_SCANNER: '${APPDIR}/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner'
+AppImage:
+  arch: x86_64
+  sign-key: None

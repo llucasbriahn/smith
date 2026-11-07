@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=SMITH Soundboard
+Comment=Sound library and virtual microphone
+Comment[pt_BR]=Biblioteca de sons e microfone virtual
+Exec=smith-soundboard %F
+Icon=org.smith.Soundboard
+Terminal=false
+Categories=AudioVideo;Audio;
+StartupNotify=true
+MimeType=audio/mpeg;audio/x-wav;audio/flac;audio/ogg;audio/opus;audio/mp4;

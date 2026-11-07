@@ -1,0 +1,68 @@
+test_categories_favorites_and_manifest_roundtrip (test_library.LibraryTests.test_categories_favorites_and_manifest_roundtrip) ... ok
+test_dedup_and_keep_edits (test_library.LibraryTests.test_dedup_and_keep_edits) ... ok
+test_empty_optional_manifest_metadata (test_library.LibraryTests.test_empty_optional_manifest_metadata) ... ok
+test_no_library_cap_and_paging (test_library.LibraryTests.test_no_library_cap_and_paging) ... ok
+test_preferences_and_persistence (test_library.LibraryTests.test_preferences_and_persistence) ... ok
+test_rename_updates_search (test_library.LibraryTests.test_rename_updates_search) ... ok
+test_soft_delete_restore_and_hotkey_conflict (test_library.LibraryTests.test_soft_delete_restore_and_hotkey_conflict) ... ok
+test_trim_and_gain_validation (test_library.LibraryTests.test_trim_and_gain_validation) ... ok
+test_unicode_search_and_literal_sql_wildcards (test_library.LibraryTests.test_unicode_search_and_literal_sql_wildcards) ... ok
+test_analysis_cancellation (test_media.MediaTests.test_analysis_cancellation) ... ok
+test_export_trim_has_correct_signal_and_48k_pcm24 (test_media.MediaTests.test_export_trim_has_correct_signal_and_48k_pcm24) ... ok
+test_flac_roundtrip (test_media.MediaTests.test_flac_roundtrip) ... ok
+test_gtk_css_and_modules_load_without_audio_hardware (test_media.MediaTests.test_gtk_css_and_modules_load_without_audio_hardware) ... ok
+test_limiter_caps_overdriven_signal (test_media.MediaTests.test_limiter_caps_overdriven_signal) ... ok
+test_missing_and_invalid_media_fail (test_media.MediaTests.test_missing_and_invalid_media_fail) ... ok
+test_mp3_encode_and_decode (test_media.MediaTests.test_mp3_encode_and_decode) ... ok
+test_original_pcm_is_preserved_without_bass_boost (test_media.MediaTests.test_original_pcm_is_preserved_without_bass_boost) ... ok
+test_original_quality_is_the_default (test_media.MediaTests.test_original_quality_is_the_default) ... ok
+test_other_installed_audio_formats_decode (test_media.MediaTests.test_other_installed_audio_formats_decode) ... ok
+test_peak_aware_gain (test_media.MediaTests.test_peak_aware_gain) ... ok
+test_player_dual_output_trim_eos (test_media.MediaTests.test_player_dual_output_trim_eos) ... ok
+test_player_mp3_trim (test_media.MediaTests.test_player_mp3_trim) ... ok
+test_player_pause_resume_local (test_media.MediaTests.test_player_pause_resume_local) ... ok
+test_probe_native_rate_and_unicode_path (test_media.MediaTests.test_probe_native_rate_and_unicode_path) ... ok
+test_replaygain_and_bounded_waveform (test_media.MediaTests.test_replaygain_and_bounded_waveform) ... ok
+test_voice_and_clip_signals_survive_mixing (test_media.MediaTests.test_voice_and_clip_signals_survive_mixing) ... ok
+test_deb_contains_valid_control_and_application_payload (test_packaging.PackagingTests.test_deb_contains_valid_control_and_application_payload) ... ok
+test_derivative_distro_detection (test_packaging.PackagingTests.test_derivative_distro_detection) ... ok
+test_failed_upgrade_restores_previous_files_and_link (test_packaging.PackagingTests.test_failed_upgrade_restores_previous_files_and_link) ... ok
+test_install_does_not_overwrite_foreign_launcher (test_packaging.PackagingTests.test_install_does_not_overwrite_foreign_launcher) ... ok
+test_install_launcher_is_relocatable_and_dependencies_check (test_packaging.PackagingTests.test_install_launcher_is_relocatable_and_dependencies_check) ... ok
+test_os_release_is_data_and_never_shell_code (test_packaging.PackagingTests.test_os_release_is_data_and_never_shell_code) ... ok
+test_package_plan_uses_native_package_managers (test_packaging.PackagingTests.test_package_plan_uses_native_package_managers) ... ok
+test_remove_preserves_library_and_modified_launcher (test_packaging.PackagingTests.test_remove_preserves_library_and_modified_launcher) ... ok
+test_rpm_digests_dependencies_and_reproducibility (test_packaging.PackagingTests.test_rpm_digests_dependencies_and_reproducibility) ... /tmp/tmp6wyabrrj/smith-soundboard-1.1.0-1.suse.noarch.rpm: digests OK
+smith-soundboard 1.1.0 noarch
+/tmp/tmp6wyabrrj/smith-soundboard-1.1.0-1.suse.noarch.rpm: digests OK
+smith-soundboard 1.1.0 noarch
+/tmp/tmp6wyabrrj/smith-soundboard-1.1.0-1.fedora.noarch.rpm: digests OK
+smith-soundboard 1.1.0 noarch
+/tmp/tmp6wyabrrj/smith-soundboard-1.1.0-1.fedora.noarch.rpm: digests OK
+smith-soundboard 1.1.0 noarch
+ok
+test_self_extract_verifies_integrity_before_execution (test_packaging.PackagingTests.test_self_extract_verifies_integrity_before_execution) ... ok
+test_source_archive_is_deterministic_and_contains_no_personal_files (test_packaging.PackagingTests.test_source_archive_is_deterministic_and_contains_no_personal_files) ... ok
+test_upgrade_and_rollback (test_packaging.PackagingTests.test_upgrade_and_rollback) ... ok
+test_capture_route_restored (test_routing.RouterTests.test_capture_route_restored) ... ok
+test_cleanup_only_owned_modules_and_reverse_order (test_routing.RouterTests.test_cleanup_only_owned_modules_and_reverse_order) ... ok
+test_dont_override_later_default_change (test_routing.RouterTests.test_dont_override_later_default_change) ... ok
+test_explicit_default_restored (test_routing.RouterTests.test_explicit_default_restored) ... ok
+test_failed_replacement_keeps_old_voice (test_routing.RouterTests.test_failed_replacement_keeps_old_voice) ... ok
+test_feedback_source_rejected (test_routing.RouterTests.test_feedback_source_rejected) ... ok
+test_invalid_monitor_indices_keep_physical_mics (test_routing.RouterTests.test_invalid_monitor_indices_keep_physical_mics) ... ok
+test_invalid_replacement_does_not_disconnect_working_voice (test_routing.RouterTests.test_invalid_replacement_does_not_disconnect_working_voice) ... ok
+test_loopback_voice_gain_does_not_mute_hardware (test_routing.RouterTests.test_loopback_voice_gain_does_not_mute_hardware) ... ok
+test_module_journal_written_after_each_load (test_routing.RouterTests.test_module_journal_written_after_each_load) ... ok
+test_partial_module_setup_rolls_back (test_routing.RouterTests.test_partial_module_setup_rolls_back) ... ok
+test_portal_trigger_encoding (test_routing.RouterTests.test_portal_trigger_encoding) ... ok
+test_refresh_does_not_recreate_healthy_voice (test_routing.RouterTests.test_refresh_does_not_recreate_healthy_voice) ... ok
+test_replugged_mic_with_new_index_reconnects (test_routing.RouterTests.test_replugged_mic_with_new_index_reconnects) ... ok
+test_reused_capture_index_not_touched (test_routing.RouterTests.test_reused_capture_index_not_touched) ... ok
+test_source_selection_falls_back_to_real_microphone (test_routing.RouterTests.test_source_selection_falls_back_to_real_microphone) ... ok
+test_super_key_is_mapped_to_mod4_on_x11 (test_routing.RouterTests.test_super_key_is_mapped_to_mod4_on_x11) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 3.567s
+
+OK
